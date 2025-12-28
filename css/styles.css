@@ -307,6 +307,7 @@ img {
 }
 
 /*==================== HOME ====================*/
+
 .main {
   overflow: hidden;
 }
@@ -320,8 +321,46 @@ img {
 }
 
 .home__content {
-  grid-template-columns: .8fr 1.2fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;      /* vertically align */
+  gap: 2rem;
+  min-height: 420px;        /* ensures equal-height feel */
+}
+
+/* text block */
+.home__data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* centers text within column */
+}
+
+/* image block */
+.home__img {
+  display: flex;
+  justify-content: center;
   align-items: center;
+}
+
+.home__blob {
+  width: 280px;
+  max-width: 90%;
+}
+
+/* mobile: stack vertically */
+@media screen and (max-width: 768px) {
+  .home__content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .home__img {
+    order: 1;
+  }
+
+  .home__data {
+    order: 2;
+  }
 }
 
 .home__social {
@@ -338,12 +377,6 @@ img {
 
 .home__social-icon:hover {
   color: var(--first-color-alt);
-}
-
-.home__blob {
-  width: 220px;
-  justify-self: center;
-  fill: var(--first-color-lighter);
 }
 
 .home__data {
