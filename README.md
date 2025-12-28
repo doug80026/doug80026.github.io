@@ -1,13 +1,8 @@
-# Responsive Portfolio Website Alexa
-## [Watch it on youtube](https://youtu.be/27JtRAI3QO8)
-### Responsive Portfolio Website Alexa
+# Front Range Prototype Lab
+## Locally owned in Boulder, Colorado
 
-- Responsive Personal Portfolio Website Using HTML CSS & JavaScript
-- Smooth scrolling in each section.
-- Includes a light and dark mode.
-- Developed first with the Mobile First methodology, then for desktop.
-- Compatible with all mobile devices and with a beautiful and pleasant user interface.
+We specialize in turning customer ideas into fully realized, working products--from first sketch through finished build. Clients can bring any concept or drawing, and the team will collaborate on prototype design and engineering, troubleshoot technical challenges, machine custom parts to exact specifications, weld and assemble components, and thoroughly test the final product. Whether you need light design support or full-scale production, they offer flexible, end-to-end services. 
 
-💙 Join the channel to see more videos like this. [Bedimcode](https://www.youtube.com/c/Bedimcode)
+Our mission is simple: partner with you to transform your vision into a precise, reliable, real-world solution.
 
-![preview img](/preview.png)
+
