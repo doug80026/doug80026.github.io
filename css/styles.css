@@ -308,65 +308,34 @@ img {
 
 /*==================== HOME ====================*/
 
+/*==================== HOME ====================*/
 .main {
   overflow: hidden;
 }
 
 .home {
-  padding-top: calc(var(--header-height) + 3rem);
+  padding-top: calc(var(--header-height) + 3.5rem);
+  padding-bottom: 3rem;
 }
 
+/* Make the hero slightly narrower than the global container */
 .home__container {
+  max-width: 800px;          /* matches About section feel */
+  margin: 0 auto;
   gap: 2rem;
 }
 
+/* Two-column layout, but constrained */
 .home__content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;      /* vertically align */
-  gap: 2rem;
-  min-height: 420px;        /* ensures equal-height feel */
-}
-
-/* text block */
-.home__data {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;  /* centers text within column */
-}
-
-/* image block */
-.home__img {
-  display: flex;
-  justify-content: center;
+  grid-template-columns: 1.1fr 0.9fr;  /* text | image */
   align-items: center;
+  column-gap: 2rem;
 }
 
-.home__blob {
-  width: 280px;
-  max-width: 90%;
-}
-
-/* mobile: stack vertically */
-@media screen and (max-width: 768px) {
-  .home__content {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .home__img {
-    order: 1;
-  }
-
-  .home__data {
-    order: 2;
-  }
-}
-
+/* Optional social area – hide or place later if you like */
 .home__social {
-  display: grid;
-  grid-template-columns: max-content;
-  row-gap: 1rem;
+  display: none;
 }
 
 .home__social-icon {
@@ -379,8 +348,25 @@ img {
   color: var(--first-color-alt);
 }
 
-.home__data {
+/* Image / blob */
+.home__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__blob {
+  width: 200px;
+  max-width: 100%;
   justify-self: center;
+  fill: var(--first-color-lighter);
+}
+
+/* Text block */
+.home__data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .home__title {
@@ -401,8 +387,9 @@ img {
   line-height: 1.6;
 }
 
+/* Scroll hint */
 .home__scroll {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .home__scroll-button {
@@ -433,6 +420,30 @@ img {
   0% { transform: translateY(0); }
   100% { transform: translateY(4px); }
 }
+
+/* Mobile: stack and center */
+@media screen and (max-width: 768px) {
+  .home__container {
+    max-width: 100%;
+    padding: 0 1.5rem;
+  }
+
+  .home__content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    row-gap: 2rem;
+  }
+
+  .home__img {
+    order: 1;
+  }
+
+  .home__data {
+    order: 2;
+    align-items: center;
+  }
+}
+
 
 /*==================== BUTTONS ====================*/
 .button {
