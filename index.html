@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Front Range Prototype Lab | Custom Product Machine Shop</title>
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">Front Range Prototype Lab</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="uil uil-estate nav__icon"></i> Home
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i> About
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="uil uil-wrench nav__icon"></i> Capabilities
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i> Services
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i> Portfolio
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <!-- Optional social link -->
+                        <a href="https://www.linkedin.com/in/doug-weller-52795413/" class="home__social-icon" target="_blank" rel="noopener">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__img">
+                        <svg class="home__blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <mask id="circleMask">
+                                    <circle cx="100" cy="100" r="90" fill="white" />
+                                </mask>
+                            </defs>
+                            <image
+                                href="assets/img/doug_weller.jpg"
+                                width="200"
+                                height="200"
+                                preserveAspectRatio="xMidYMid slice"
+                                mask="url(#circleMask)"
+                            />
+                        </svg>
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">Front Range Prototype Lab</h1>
+                        <h3 class="home__subtitle">Custom Product Machine Shop</h3>
+                        <p class="home__description">
+                            We turn ideas into working products—from first sketch to finished build. 
+                            Bring any concept or drawing, and we’ll help design, machine, weld, assemble, 
+                            and test a precise, real-world solution.
+                        </p>
+                        <a href="#contact" class="button button--flex">
+                            Start a Project
+                            <i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Scroll down</span>
+                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h2 class="section__title">About</h2>
+                    <p class="about__description">
+                        Front Range Prototype Lab is a small, flexible machine shop focused on custom, 
+                        one-off, and short-run projects. Whether you’re an engineer, inventor, small 
+                        business, or hobbyist, we specialize in turning rough ideas into precise, 
+                        reliable parts and assemblies.
+                    </p>
+                    <p class="about__description">
+                        Bring us a sketch on a napkin or a fully dimensioned drawing—we’ll meet you 
+                        where you are. With decades of hands-on experience in machining, fabrication, 
+                        and prototyping, we can help you refine your idea, troubleshoot technical 
+                        challenges, and build something that actually works.
+                    </p>
+                    <p class="about__description">
+                        Our mission is simple: <strong>partner with you to transform your vision into a 
+                        precise, real-world solution you can trust.</strong>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== CAPABILITIES (SKILLS) ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Capabilities</h2>
+            <div class="skills__container container grid">
+                <div class="skills__content">
+                    <h3 class="skills__title">Design & Engineering</h3>
+                    <ul class="skills__list">
+                        <li>Prototype design and refinement</li>
+                        <li>Reviewing and improving customer drawings</li>
+                        <li>Light engineering support</li>
+                        <li>Design-for-manufacturing feedback</li>
+                    </ul>
+                </div>
+
+                <div class="skills__content">
+                    <h3 class="skills__title">Machining & Fabrication</h3>
+                    <ul class="skills__list">
+                        <li>Manual milling & turning</li>
+                        <li>Custom fixtures and brackets</li>
+                        <li>Precision drilling and tapping</li>
+                        <li>Small-batch production runs</li>
+                    </ul>
+                </div>
+
+                <div class="skills__content">
+                    <h3 class="skills__title">Welding & Assembly</h3>
+                    <ul class="skills__list">
+                        <li>TIG and MIG welding</li>
+                        <li>Steel, aluminum, and stainless</li>
+                        <li>Mechanical assembly</li>
+                        <li>Test setups and rigs</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PROCESS (QUALIFICATION) ====================-->
+        <section class="qualification section" id="process">
+            <h2 class="section__title">How It Works</h2>
+            <div class="qualification__container container">
+                <div class="qualification__content">
+                    <h3 class="qualification__title">1. Share Your Idea</h3>
+                    <p>Send us a sketch, drawing, or description of what you need. We’ll talk through your goals, constraints, and timelines.</p>
+                </div>
+
+                <div class="qualification__content">
+                    <h3 class="qualification__title">2. Design & Plan</h3>
+                    <p>We help refine the concept, confirm dimensions and materials, and agree on an approach that fits your budget.</p>
+                </div>
+
+                <div class="qualification__content">
+                    <h3 class="qualification__title">3. Build & Fabricate</h3>
+                    <p>We machine, weld, and assemble your parts to spec, keeping you in the loop as needed.</p>
+                </div>
+
+                <div class="qualification__content">
+                    <h3 class="qualification__title">4. Test & Deliver</h3>
+                    <p>We test fit and function, make final adjustments, and hand off a ready-to-use prototype or finished product.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SERVICES ====================-->
+        <section class="services section" id="services">
+            <h2 class="section__title">Services</h2>
+            <div class="services__container container grid">
+                <div class="services__content">
+                    <h3 class="services__title">Concept to Prototype</h3>
+                    <p class="services__description">
+                        Have an idea but not sure how to build it? We can help with layout, dimensions, material choices, 
+                        and practical design so it can be manufactured and tested.
+                    </p>
+                </div>
+
+                <div class="services__content">
+                    <h3 class="services__title">Precision Machining</h3>
+                    <p class="services__description">
+                        Custom one-off parts, replacement components, small runs, and special fixtures—machined to your drawings 
+                        or created from a concept we develop together.
+                    </p>
+                </div>
+
+                <div class="services__content">
+                    <h3 class="services__title">Welding & Fabrication</h3>
+                    <p class="services__description">
+                        TIG/MIG welding and fabrication of brackets, frames, mounts, test stands, and more. 
+                        We handle cutting, fitting, and final assembly.
+                    </p>
+                </div>
+
+                <div class="services__content">
+                    <h3 class="services__title">Testing & Refinement</h3>
+                    <p class="services__description">
+                        We don’t just hand you parts—we help you test fit and function and can make adjustments 
+                        so your design is ready for the real world.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="portfolio">
+            <div class="portfolio container">
+                <h2 class="section__title">Shop & Work Examples</h2>
+                <p class="section__subtitle">
+                    A glimpse at some of the tools, setups, and parts used to bring customer projects to life.
+                </p>
+
+                <div class="portfolio__container">
+                    <div class="portfolio__item">
+                        <img src="assets/img/AC tig welder.jpg" alt="AC Tig Welder">
+                        <p class="portfolio__description">AC TIG welder for precision aluminum and stainless work.</p>
+                    </div>
+
+                    <div class="portfolio__item">
+                        <img src="assets/img/custom load cells.jpg" alt="Custom Load Cells">
+                        <p class="portfolio__description">Custom load cell setup for test and measurement applications.</p>
+                    </div>
+
+                    <div class="portfolio__item">
+                        <img src="assets/img/forklift.jpg" alt="Forklift">
+                        <p class="portfolio__description">Shop forklift for safe handling of heavy materials and assemblies.</p>
+                    </div>
+
+                    <div class="portfolio__item">
+                        <img src="assets/img/lathe back.jpg" alt="Lathe (Back)">
+                        <p class="portfolio__description">Engine lathe, rear view—set up for turning precision shafts and parts.</p>
+                    </div>
+
+                    <div class="portfolio__item">
+                        <img src="assets/img/lathe.jpg" alt="Lathe (Front)">
+                        <p class="portfolio__description">Engine lathe, front view—core tool for turning operations.</p>
+                    </div>
+
+                    <div class="portfolio__item">
+                        <img src="assets/img/made parts.jpg" alt="Made Parts">
+                        <p class="portfolio__description">Example custom parts produced for customer prototypes.</p>
+                    </div>
+
+                    <div class="portfolio__item">
+                        <img src="assets/img/mill.jpg" alt="Mill">
+                        <p class="portfolio__description">Vertical mill used for precision slots, pockets, and drilling.</p>
+                    </div>
+
+                    <div class="portfolio__item">
+                        <img src="assets/img/Multimatic.jpg" alt="Multimatic">
+                        <p class="portfolio__description">Multimatic welding setup for flexible fabrication work.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== CONTACT ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Start Your Project</h2>
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <p class="contact__description">
+                        Ready to talk about a project or just want to know what’s possible? 
+                        Send a note with a short description of what you’re trying to build. 
+                        If you have drawings or photos, you can mention them and we’ll follow up for details.
+                    </p>
+                    <ul class="contact__info">
+                        <li><strong>Email:</strong> <a href="mailto:info@frontrangeprototypelab.com">info@frontrangeprototypelab.com</a></li>
+                        <li><strong>Phone:</strong> (555) 555-5555</li>
+                        <li><strong>Location:</strong> Front Range, Colorado</li>
+                    </ul>
+                </div>
+
+                <div class="contact__content">
+                    <form action="#" class="contact__form">
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag">Name</label>
+                            <input type="text" name="name" class="contact__form-input" placeholder="Your name">
+                        </div>
+
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag">Email</label>
+                            <input type="email" name="email" class="contact__form-input" placeholder="you@example.com">
+                        </div>
+
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag">Project Description</label>
+                            <textarea name="project" cols="30" rows="5" class="contact__form-input" placeholder="What are you trying to build?"></textarea>
+                        </div>
+
+                        <button type="submit" class="button button--flex">
+                            Send Message
+                            <i class="uil uil-message button__icon"></i>
+                        </button>
+                    </form>
+                    <!-- Note: wire this form up to email or a backend later -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <p class="footer__title">Front Range Prototype Lab</p>
+            <p class="footer__copy">Custom product machine shop • From idea to finished build</p>
+            <span class="footer__copy">&copy; <span id="year"></span> Front Range Prototype Lab. All rights reserved.</span>
+        </div>
+    </footer>
+    
+    <!--==================== SWIPER JS ====================-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        // Simple current year in footer
+        const yearSpan = document.getElementById('year');
+        if (yearSpan) {
+            yearSpan.textContent = new Date().getFullYear();
+        }
+    </script>
+</body>
+</html>
