@@ -844,6 +844,11 @@ img {
     order: 1;
   }
 
+  .home.section .home__container.container {
+  /* ...existing rules... */
+  border: 1px dashed red;  /* TEMP: just to see the width */
+}
+
   .home__data {
     order: 2;
     align-items: center;
