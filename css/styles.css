@@ -307,8 +307,6 @@ img {
 }
 
 /*==================== HOME ====================*/
-
-/*==================== HOME ====================*/
 .main {
   overflow: hidden;
 }
@@ -318,48 +316,21 @@ img {
   padding-bottom: 3rem;
 }
 
-/* Make the hero slightly narrower than the global container */
+/* Outer wrapper: just centers the inner content */
 .home__container {
-  max-width: 500px;          /* matches About section feel */
-  margin: 0 auto;
-  gap: 2rem;
-}
-
-/* Two-column layout, but constrained */
-.home__content {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;  /* text | image */
-  align-items: center;
-  column-gap: 2rem;
-}
-
-/* Optional social area – hide or place later if you like */
-.home__social {
-  display: none;
-}
-
-.home__social-icon {
-  font-size: 1.4rem;
-  color: var(--text-color);
-  transition: .3s;
-}
-
-.home__social-icon:hover {
-  color: var(--first-color-alt);
-}
-
-/* Image / blob */
-.home__img {
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding: 0 1.5rem;
 }
 
-.home__blob {
-  width: 200px;
-  max-width: 100%;
-  justify-self: center;
-  fill: var(--first-color-lighter);
+/* Inner content: same width as About (800px) */
+.home__content {
+  width: 100%;
+  max-width: 800px;          /* ← match about__container */
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;   /* text | image */
+  align-items: center;
+  column-gap: 2rem;
 }
 
 /* Text block */
@@ -387,9 +358,29 @@ img {
   line-height: 1.6;
 }
 
+/* Image block */
+.home__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__blob {
+  width: 200px;
+  max-width: 100%;
+  justify-self: center;
+  fill: var(--first-color-lighter);
+}
+
+/* (Optional) hide social for now */
+.home__social {
+  display: none;
+}
+
 /* Scroll hint */
 .home__scroll {
   margin-top: 1rem;
+  text-align: left;
 }
 
 .home__scroll-button {
@@ -413,6 +404,35 @@ img {
 
 .home__scroll-arrow {
   font-size: 1rem;
+}
+
+/* Keyframes */
+@keyframes moveY {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(4px); }
+}
+
+/* Mobile: stack & center */
+@media screen and (max-width: 768px) {
+  .home__content {
+    max-width: 100%;
+    grid-template-columns: 1fr;
+    text-align: center;
+    row-gap: 2rem;
+  }
+
+  .home__img {
+    order: 1;
+  }
+
+  .home__data {
+    order: 2;
+    align-items: center;
+  }
+
+  .home__scroll {
+    text-align: center;
+  }
 }
 
 /* Keyframes */
