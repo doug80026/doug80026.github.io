@@ -320,7 +320,7 @@ img {
 
 /* Make the hero slightly narrower than the global container */
 .home__container {
-  max-width: 800px;          /* matches About section feel */
+  max-width: 500px;          /* matches About section feel */
   margin: 0 auto;
   gap: 2rem;
 }
