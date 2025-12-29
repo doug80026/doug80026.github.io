@@ -786,3 +786,67 @@ img {
     width: 260px;
   }
 }
+
+/*======test rules=======*/
+
+/* ===== FORCE HOME WIDTH TO MATCH ABOUT ===== */
+.home.section .home__container.container {
+  max-width: 800px;          /* same as about__container */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  gap: 2rem;
+}
+
+/* Two-column layout inside that narrower container */
+.home.section .home__content.grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;   /* text | image */
+  align-items: center;
+  column-gap: 2rem;
+}
+
+/* Make sure the button doesn't stretch weirdly */
+.home__data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+}
+
+/* Slightly smaller hero title so it doesn't feel oversized */
+.home__title {
+  font-size: 2.25rem;
+}
+
+/* Keep the image neat */
+.home__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__blob {
+  width: 200px;
+  max-width: 100%;
+}
+
+/* Mobile: stack like the rest of the site */
+@media screen and (max-width: 768px) {
+  .home.section .home__content.grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    row-gap: 2rem;
+  }
+
+  .home__img {
+    order: 1;
+  }
+
+  .home__data {
+    order: 2;
+    align-items: center;
+  }
+}
+
